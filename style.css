@@ -1,1 +1,58 @@
 /* Style */
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap');
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template: 1fr 4fr auto/1fr;
+}
+
+header {
+  background-color: skyblue;
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* ==== Game table style ==== */
+#content {
+  background-color: #e0f2fe;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+#game-info {
+  align-self: center;
+}
+#game-table {
+  background-color: #fafafa;
+  height: 10rem;
+  width: 10rem;
+  align-self: center;
+}
+
+#game-options {
+  align-self: center;
+}
+
+#game-options > button {
+  background-color: blue;
+  width: 6rem;
+  border-radius: 1rem;
+  color: white;
+  border: none;
+  padding: 0.25rem;
+  align-self: center;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #e5e7eb;
+  text-align: center;
+}
