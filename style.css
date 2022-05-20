@@ -43,7 +43,8 @@ header {
   align-self: center;
 }
 
-#game-options > button {
+#game-options > button,
+#init-options > button {
   background-color: blue;
   width: 6rem;
   border-radius: 1rem;
@@ -53,6 +54,12 @@ header {
   align-self: center;
   cursor: pointer;
 }
+
+/* ==== Initalize div ==== */
+#init-options {
+  background-color: green;
+}
+
 
 footer {
   background-color: #e5e7eb;
