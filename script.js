@@ -13,8 +13,10 @@ const Player = (name) => {
 
 // Start game
 const initializeGame = (() => {
+
   const content = document.querySelector('#content');
 
+  // Initial game options
   const initOptions = document.getElementById('init-options');
   initOptions.textContent = 'Initialize content';
 
@@ -23,11 +25,32 @@ const initializeGame = (() => {
   initNewBtn.textContent = 'New';
   initOptions.appendChild(initNewBtn);
 
+  // Game mode
+  const selectGameMode = document.getElementById('select-game-mode');
+  selectGameMode.textContent = 'Select game mode';
+
+  const otherPlayer = document.createElement('button');
+  otherPlayer.id = 'other-player-btn';
+  otherPlayer.textContent = 'Other player';
+  selectGameMode.appendChild(otherPlayer);
+
+  const artifIntel = document.createElement('button');
+  artifIntel.id = 'artificial-intel-btn';
+  artifIntel.textContent = 'AI';
+  selectGameMode.appendChild(artifIntel);
+
+  // Show/Hide content
   content.style.display = 'none';
+  selectGameMode.style.display = 'none';
   initOptions.style.display = 'block';
-  
+
   initNewBtn.addEventListener('click', function() {
     initOptions.style.display = 'none';
+    selectGameMode.style.display = 'block';
+  });
+
+  otherPlayer.addEventListener('click', function() {
+    selectGameMode.style.display = 'none';
     content.style.display = 'flex';
   });
 
