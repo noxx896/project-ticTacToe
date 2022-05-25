@@ -44,7 +44,8 @@ header {
 }
 
 #game-options > button,
-#init-options > button {
+#init-options > button,
+#select-game-mode > button {
   background-color: blue;
   width: 6rem;
   border-radius: 1rem;
@@ -60,6 +61,10 @@ header {
   background-color: green;
 }
 
+/* ==== Game mode div ==== */
+#select-game-mode {
+  background-color: yellow;
+}
 
 footer {
   background-color: #e5e7eb;
