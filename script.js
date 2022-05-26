@@ -39,9 +39,14 @@ const initializeGame = (() => {
   artifIntel.textContent = 'AI';
   selectGameMode.appendChild(artifIntel);
 
+  // Enter data
+  const enterData = document.getElementById('enter-data');
+  const startGame = document.getElementById('start-game-btn');
+
   // Show/Hide content
   content.style.display = 'none';
   selectGameMode.style.display = 'none';
+  enterData.style.display = 'none';
   initOptions.style.display = 'block';
 
   initNewBtn.addEventListener('click', function() {
@@ -51,7 +56,12 @@ const initializeGame = (() => {
 
   otherPlayer.addEventListener('click', function() {
     selectGameMode.style.display = 'none';
-    content.style.display = 'flex';
+    enterData.style.display = 'flex';
   });
+
+  startGame.addEventListener('click', function() {
+    enterData.style.display = 'none';
+    content.style.display = 'flex';
+  })
 
 })();
