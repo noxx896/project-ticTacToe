@@ -45,7 +45,8 @@ header {
 
 #game-options > button,
 #init-options > button,
-#select-game-mode > button {
+#select-game-mode > button,
+#start-game > button {
   background-color: blue;
   width: 6rem;
   border-radius: 1rem;
@@ -64,6 +65,30 @@ header {
 /* ==== Game mode div ==== */
 #select-game-mode {
   background-color: yellow;
+}
+
+/* ==== Enter data ==== */
+#enter-data {
+  background-color: orange;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+#player-name {
+  display: flex;
+  gap: 1rem;
+}
+
+.name-text {
+  padding-left: 0.5rem;
+}
+
+#name-one,
+#name-two {
+  width: 10rem;
+  border-radius: 2rem;
 }
 
 footer {
