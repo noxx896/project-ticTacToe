@@ -40,6 +40,47 @@ const playGame = (playerOne, playerTwo) => {
       sqr_0.textContent = 'EQUIS';
       moveCounter++;
     }
+    if(moveCounter >= 5) {
+      if(move[0] == 0 && move[1] == 0 && move[2] == 0 ||
+         move[3] == 0 && move[4] == 0 && move[5] == 0 ||
+         move[6] == 0 && move[7] == 0 && move[8] == 0 ||
+         move[0] == 0 && move[3] == 0 && move[6] == 0 ||
+         move[1] == 0 && move[4] == 0 && move[7] == 0 ||
+         move[2] == 0 && move[5] == 0 && move[8] == 0 ||
+         move[0] == 0 && move[4] == 0 && move[8] == 0 ||
+         move[2] == 0 && move[4] == 0 && move[6] == 0) {
+        console.log(`${playerOne.name} WINS!!!`);
+        sqr_0.disabled = true;
+        sqr_1.disabled = true;
+        sqr_2.disabled = true;
+        sqr_3.disabled = true;
+        sqr_4.disabled = true;
+        sqr_5.disabled = true;
+        sqr_6.disabled = true;
+        sqr_7.disabled = true;
+        sqr_8.disabled = true;
+      }else if(move[0] == 1 && move[1] == 1 && move[2] == 1 ||
+               move[3] == 1 && move[4] == 1 && move[5] == 1 ||
+               move[6] == 1 && move[7] == 1 && move[8] == 1 ||
+               move[0] == 1 && move[3] == 1 && move[6] == 1 ||
+               move[1] == 1 && move[4] == 1 && move[7] == 1 ||
+               move[2] == 1 && move[5] == 1 && move[8] == 1 ||
+               move[0] == 1 && move[4] == 1 && move[8] == 1 ||
+               move[2] == 1 && move[4] == 1 && move[6] == 1) {
+        console.log(`${playerTwo.name} WINS!!!`);
+        sqr_0.disabled = true;
+        sqr_1.disabled = true;
+        sqr_2.disabled = true;
+        sqr_3.disabled = true;
+        sqr_4.disabled = true;
+        sqr_5.disabled = true;
+        sqr_6.disabled = true;
+        sqr_7.disabled = true;
+        sqr_8.disabled = true;
+      }else if(moveCounter == 9){
+        console.log('IT\'S A DRAW!!');
+      }
+    }
   });
   sqr_1.addEventListener('click', function() {
     sqr_1.disabled = true;
@@ -53,6 +94,47 @@ const playGame = (playerOne, playerTwo) => {
       move[1] = 0;
       sqr_1.textContent = 'EQUIS';
       moveCounter++;
+    }
+    if(moveCounter >= 5) {
+      if(move[0] == 0 && move[1] == 0 && move[2] == 0 ||
+         move[3] == 0 && move[4] == 0 && move[5] == 0 ||
+         move[6] == 0 && move[7] == 0 && move[8] == 0 ||
+         move[0] == 0 && move[3] == 0 && move[6] == 0 ||
+         move[1] == 0 && move[4] == 0 && move[7] == 0 ||
+         move[2] == 0 && move[5] == 0 && move[8] == 0 ||
+         move[0] == 0 && move[4] == 0 && move[8] == 0 ||
+         move[2] == 0 && move[4] == 0 && move[6] == 0) {
+        console.log(`${playerOne.name} WINS!!!`);
+        sqr_0.disabled = true;
+        sqr_1.disabled = true;
+        sqr_2.disabled = true;
+        sqr_3.disabled = true;
+        sqr_4.disabled = true;
+        sqr_5.disabled = true;
+        sqr_6.disabled = true;
+        sqr_7.disabled = true;
+        sqr_8.disabled = true;
+      }else if(move[0] == 1 && move[1] == 1 && move[2] == 1 ||
+               move[3] == 1 && move[4] == 1 && move[5] == 1 ||
+               move[6] == 1 && move[7] == 1 && move[8] == 1 ||
+               move[0] == 1 && move[3] == 1 && move[6] == 1 ||
+               move[1] == 1 && move[4] == 1 && move[7] == 1 ||
+               move[2] == 1 && move[5] == 1 && move[8] == 1 ||
+               move[0] == 1 && move[4] == 1 && move[8] == 1 ||
+               move[2] == 1 && move[4] == 1 && move[6] == 1) {
+        console.log(`${playerTwo.name} WINS!!!`);
+        sqr_0.disabled = true;
+        sqr_1.disabled = true;
+        sqr_2.disabled = true;
+        sqr_3.disabled = true;
+        sqr_4.disabled = true;
+        sqr_5.disabled = true;
+        sqr_6.disabled = true;
+        sqr_7.disabled = true;
+        sqr_8.disabled = true;
+      }else if(moveCounter == 9){
+        console.log('IT\'S A DRAW!!');
+      }
     }
   });
   sqr_2.addEventListener('click', function() {
@@ -68,6 +150,47 @@ const playGame = (playerOne, playerTwo) => {
       sqr_2.textContent = 'EQUIS';
       moveCounter++;
     }
+    if(moveCounter >= 5) {
+      if(move[0] == 0 && move[1] == 0 && move[2] == 0 ||
+         move[3] == 0 && move[4] == 0 && move[5] == 0 ||
+         move[6] == 0 && move[7] == 0 && move[8] == 0 ||
+         move[0] == 0 && move[3] == 0 && move[6] == 0 ||
+         move[1] == 0 && move[4] == 0 && move[7] == 0 ||
+         move[2] == 0 && move[5] == 0 && move[8] == 0 ||
+         move[0] == 0 && move[4] == 0 && move[8] == 0 ||
+         move[2] == 0 && move[4] == 0 && move[6] == 0) {
+        console.log(`${playerOne.name} WINS!!!`);
+        sqr_0.disabled = true;
+        sqr_1.disabled = true;
+        sqr_2.disabled = true;
+        sqr_3.disabled = true;
+        sqr_4.disabled = true;
+        sqr_5.disabled = true;
+        sqr_6.disabled = true;
+        sqr_7.disabled = true;
+        sqr_8.disabled = true;
+      }else if(move[0] == 1 && move[1] == 1 && move[2] == 1 ||
+               move[3] == 1 && move[4] == 1 && move[5] == 1 ||
+               move[6] == 1 && move[7] == 1 && move[8] == 1 ||
+               move[0] == 1 && move[3] == 1 && move[6] == 1 ||
+               move[1] == 1 && move[4] == 1 && move[7] == 1 ||
+               move[2] == 1 && move[5] == 1 && move[8] == 1 ||
+               move[0] == 1 && move[4] == 1 && move[8] == 1 ||
+               move[2] == 1 && move[4] == 1 && move[6] == 1) {
+        console.log(`${playerTwo.name} WINS!!!`);
+        sqr_0.disabled = true;
+        sqr_1.disabled = true;
+        sqr_2.disabled = true;
+        sqr_3.disabled = true;
+        sqr_4.disabled = true;
+        sqr_5.disabled = true;
+        sqr_6.disabled = true;
+        sqr_7.disabled = true;
+        sqr_8.disabled = true;
+      }else if(moveCounter == 9){
+        console.log('IT\'S A DRAW!!');
+      }
+    }
   });
   sqr_3.addEventListener('click', function() {
     sqr_3.disabled = true;
@@ -81,6 +204,47 @@ const playGame = (playerOne, playerTwo) => {
       move[3] = 0;
       sqr_3.textContent = 'EQUIS';
       moveCounter++;
+    }
+    if(moveCounter >= 5) {
+      if(move[0] == 0 && move[1] == 0 && move[2] == 0 ||
+         move[3] == 0 && move[4] == 0 && move[5] == 0 ||
+         move[6] == 0 && move[7] == 0 && move[8] == 0 ||
+         move[0] == 0 && move[3] == 0 && move[6] == 0 ||
+         move[1] == 0 && move[4] == 0 && move[7] == 0 ||
+         move[2] == 0 && move[5] == 0 && move[8] == 0 ||
+         move[0] == 0 && move[4] == 0 && move[8] == 0 ||
+         move[2] == 0 && move[4] == 0 && move[6] == 0) {
+        console.log(`${playerOne.name} WINS!!!`);
+        sqr_0.disabled = true;
+        sqr_1.disabled = true;
+        sqr_2.disabled = true;
+        sqr_3.disabled = true;
+        sqr_4.disabled = true;
+        sqr_5.disabled = true;
+        sqr_6.disabled = true;
+        sqr_7.disabled = true;
+        sqr_8.disabled = true;
+      }else if(move[0] == 1 && move[1] == 1 && move[2] == 1 ||
+               move[3] == 1 && move[4] == 1 && move[5] == 1 ||
+               move[6] == 1 && move[7] == 1 && move[8] == 1 ||
+               move[0] == 1 && move[3] == 1 && move[6] == 1 ||
+               move[1] == 1 && move[4] == 1 && move[7] == 1 ||
+               move[2] == 1 && move[5] == 1 && move[8] == 1 ||
+               move[0] == 1 && move[4] == 1 && move[8] == 1 ||
+               move[2] == 1 && move[4] == 1 && move[6] == 1) {
+        console.log(`${playerTwo.name} WINS!!!`);
+        sqr_0.disabled = true;
+        sqr_1.disabled = true;
+        sqr_2.disabled = true;
+        sqr_3.disabled = true;
+        sqr_4.disabled = true;
+        sqr_5.disabled = true;
+        sqr_6.disabled = true;
+        sqr_7.disabled = true;
+        sqr_8.disabled = true;
+      }else if(moveCounter == 9){
+        console.log('IT\'S A DRAW!!');
+      }
     }
   });
   sqr_4.addEventListener('click', function() {
@@ -96,6 +260,47 @@ const playGame = (playerOne, playerTwo) => {
       sqr_4.textContent = 'EQUIS';
       moveCounter++;
     }
+    if(moveCounter >= 5) {
+      if(move[0] == 0 && move[1] == 0 && move[2] == 0 ||
+         move[3] == 0 && move[4] == 0 && move[5] == 0 ||
+         move[6] == 0 && move[7] == 0 && move[8] == 0 ||
+         move[0] == 0 && move[3] == 0 && move[6] == 0 ||
+         move[1] == 0 && move[4] == 0 && move[7] == 0 ||
+         move[2] == 0 && move[5] == 0 && move[8] == 0 ||
+         move[0] == 0 && move[4] == 0 && move[8] == 0 ||
+         move[2] == 0 && move[4] == 0 && move[6] == 0) {
+        console.log(`${playerOne.name} WINS!!!`);
+        sqr_0.disabled = true;
+        sqr_1.disabled = true;
+        sqr_2.disabled = true;
+        sqr_3.disabled = true;
+        sqr_4.disabled = true;
+        sqr_5.disabled = true;
+        sqr_6.disabled = true;
+        sqr_7.disabled = true;
+        sqr_8.disabled = true;
+      }else if(move[0] == 1 && move[1] == 1 && move[2] == 1 ||
+               move[3] == 1 && move[4] == 1 && move[5] == 1 ||
+               move[6] == 1 && move[7] == 1 && move[8] == 1 ||
+               move[0] == 1 && move[3] == 1 && move[6] == 1 ||
+               move[1] == 1 && move[4] == 1 && move[7] == 1 ||
+               move[2] == 1 && move[5] == 1 && move[8] == 1 ||
+               move[0] == 1 && move[4] == 1 && move[8] == 1 ||
+               move[2] == 1 && move[4] == 1 && move[6] == 1) {
+        console.log(`${playerTwo.name} WINS!!!`);
+        sqr_0.disabled = true;
+        sqr_1.disabled = true;
+        sqr_2.disabled = true;
+        sqr_3.disabled = true;
+        sqr_4.disabled = true;
+        sqr_5.disabled = true;
+        sqr_6.disabled = true;
+        sqr_7.disabled = true;
+        sqr_8.disabled = true;
+      }else if(moveCounter == 9){
+        console.log('IT\'S A DRAW!!');
+      }
+    }
   });
   sqr_5.addEventListener('click', function() {
     sqr_5.disabled = true;
@@ -109,6 +314,47 @@ const playGame = (playerOne, playerTwo) => {
       move[5] = 0;
       sqr_5.textContent = 'EQUIS';
       moveCounter++;
+    }
+    if(moveCounter >= 5) {
+      if(move[0] == 0 && move[1] == 0 && move[2] == 0 ||
+         move[3] == 0 && move[4] == 0 && move[5] == 0 ||
+         move[6] == 0 && move[7] == 0 && move[8] == 0 ||
+         move[0] == 0 && move[3] == 0 && move[6] == 0 ||
+         move[1] == 0 && move[4] == 0 && move[7] == 0 ||
+         move[2] == 0 && move[5] == 0 && move[8] == 0 ||
+         move[0] == 0 && move[4] == 0 && move[8] == 0 ||
+         move[2] == 0 && move[4] == 0 && move[6] == 0) {
+        console.log(`${playerOne.name} WINS!!!`);
+        sqr_0.disabled = true;
+        sqr_1.disabled = true;
+        sqr_2.disabled = true;
+        sqr_3.disabled = true;
+        sqr_4.disabled = true;
+        sqr_5.disabled = true;
+        sqr_6.disabled = true;
+        sqr_7.disabled = true;
+        sqr_8.disabled = true;
+      }else if(move[0] == 1 && move[1] == 1 && move[2] == 1 ||
+               move[3] == 1 && move[4] == 1 && move[5] == 1 ||
+               move[6] == 1 && move[7] == 1 && move[8] == 1 ||
+               move[0] == 1 && move[3] == 1 && move[6] == 1 ||
+               move[1] == 1 && move[4] == 1 && move[7] == 1 ||
+               move[2] == 1 && move[5] == 1 && move[8] == 1 ||
+               move[0] == 1 && move[4] == 1 && move[8] == 1 ||
+               move[2] == 1 && move[4] == 1 && move[6] == 1) {
+        console.log(`${playerTwo.name} WINS!!!`);
+        sqr_0.disabled = true;
+        sqr_1.disabled = true;
+        sqr_2.disabled = true;
+        sqr_3.disabled = true;
+        sqr_4.disabled = true;
+        sqr_5.disabled = true;
+        sqr_6.disabled = true;
+        sqr_7.disabled = true;
+        sqr_8.disabled = true;
+      }else if(moveCounter == 9){
+        console.log('IT\'S A DRAW!!');
+      }
     }
   });
   sqr_6.addEventListener('click', function() {
@@ -124,6 +370,47 @@ const playGame = (playerOne, playerTwo) => {
       sqr_6.textContent = 'EQUIS';
       moveCounter++;
     }
+    if(moveCounter >= 5) {
+      if(move[0] == 0 && move[1] == 0 && move[2] == 0 ||
+         move[3] == 0 && move[4] == 0 && move[5] == 0 ||
+         move[6] == 0 && move[7] == 0 && move[8] == 0 ||
+         move[0] == 0 && move[3] == 0 && move[6] == 0 ||
+         move[1] == 0 && move[4] == 0 && move[7] == 0 ||
+         move[2] == 0 && move[5] == 0 && move[8] == 0 ||
+         move[0] == 0 && move[4] == 0 && move[8] == 0 ||
+         move[2] == 0 && move[4] == 0 && move[6] == 0) {
+        console.log(`${playerOne.name} WINS!!!`);
+        sqr_0.disabled = true;
+        sqr_1.disabled = true;
+        sqr_2.disabled = true;
+        sqr_3.disabled = true;
+        sqr_4.disabled = true;
+        sqr_5.disabled = true;
+        sqr_6.disabled = true;
+        sqr_7.disabled = true;
+        sqr_8.disabled = true;
+      }else if(move[0] == 1 && move[1] == 1 && move[2] == 1 ||
+               move[3] == 1 && move[4] == 1 && move[5] == 1 ||
+               move[6] == 1 && move[7] == 1 && move[8] == 1 ||
+               move[0] == 1 && move[3] == 1 && move[6] == 1 ||
+               move[1] == 1 && move[4] == 1 && move[7] == 1 ||
+               move[2] == 1 && move[5] == 1 && move[8] == 1 ||
+               move[0] == 1 && move[4] == 1 && move[8] == 1 ||
+               move[2] == 1 && move[4] == 1 && move[6] == 1) {
+        console.log(`${playerTwo.name} WINS!!!`);
+        sqr_0.disabled = true;
+        sqr_1.disabled = true;
+        sqr_2.disabled = true;
+        sqr_3.disabled = true;
+        sqr_4.disabled = true;
+        sqr_5.disabled = true;
+        sqr_6.disabled = true;
+        sqr_7.disabled = true;
+        sqr_8.disabled = true;
+      }else if(moveCounter == 9){
+        console.log('IT\'S A DRAW!!');
+      }
+    }
   });
   sqr_7.addEventListener('click', function() {
     sqr_7.disabled = true;
@@ -137,6 +424,47 @@ const playGame = (playerOne, playerTwo) => {
       move[7] = 0;
       sqr_7.textContent = 'EQUIS';
       moveCounter++;
+    }
+    if(moveCounter >= 5) {
+      if(move[0] == 0 && move[1] == 0 && move[2] == 0 ||
+         move[3] == 0 && move[4] == 0 && move[5] == 0 ||
+         move[6] == 0 && move[7] == 0 && move[8] == 0 ||
+         move[0] == 0 && move[3] == 0 && move[6] == 0 ||
+         move[1] == 0 && move[4] == 0 && move[7] == 0 ||
+         move[2] == 0 && move[5] == 0 && move[8] == 0 ||
+         move[0] == 0 && move[4] == 0 && move[8] == 0 ||
+         move[2] == 0 && move[4] == 0 && move[6] == 0) {
+        console.log(`${playerOne.name} WINS!!!`);
+        sqr_0.disabled = true;
+        sqr_1.disabled = true;
+        sqr_2.disabled = true;
+        sqr_3.disabled = true;
+        sqr_4.disabled = true;
+        sqr_5.disabled = true;
+        sqr_6.disabled = true;
+        sqr_7.disabled = true;
+        sqr_8.disabled = true;
+      }else if(move[0] == 1 && move[1] == 1 && move[2] == 1 ||
+               move[3] == 1 && move[4] == 1 && move[5] == 1 ||
+               move[6] == 1 && move[7] == 1 && move[8] == 1 ||
+               move[0] == 1 && move[3] == 1 && move[6] == 1 ||
+               move[1] == 1 && move[4] == 1 && move[7] == 1 ||
+               move[2] == 1 && move[5] == 1 && move[8] == 1 ||
+               move[0] == 1 && move[4] == 1 && move[8] == 1 ||
+               move[2] == 1 && move[4] == 1 && move[6] == 1) {
+        console.log(`${playerTwo.name} WINS!!!`);
+        sqr_0.disabled = true;
+        sqr_1.disabled = true;
+        sqr_2.disabled = true;
+        sqr_3.disabled = true;
+        sqr_4.disabled = true;
+        sqr_5.disabled = true;
+        sqr_6.disabled = true;
+        sqr_7.disabled = true;
+        sqr_8.disabled = true;
+      }else if(moveCounter == 9){
+        console.log('IT\'S A DRAW!!');
+      }
     }
   });
   sqr_8.addEventListener('click', function() {
@@ -152,7 +480,49 @@ const playGame = (playerOne, playerTwo) => {
       sqr_8.textContent = 'EQUIS';
       moveCounter++;
     }
+    if(moveCounter >= 5) {
+      if(move[0] == 0 && move[1] == 0 && move[2] == 0 ||
+         move[3] == 0 && move[4] == 0 && move[5] == 0 ||
+         move[6] == 0 && move[7] == 0 && move[8] == 0 ||
+         move[0] == 0 && move[3] == 0 && move[6] == 0 ||
+         move[1] == 0 && move[4] == 0 && move[7] == 0 ||
+         move[2] == 0 && move[5] == 0 && move[8] == 0 ||
+         move[0] == 0 && move[4] == 0 && move[8] == 0 ||
+         move[2] == 0 && move[4] == 0 && move[6] == 0) {
+        console.log(`${playerOne.name} WINS!!!`);
+        sqr_0.disabled = true;
+        sqr_1.disabled = true;
+        sqr_2.disabled = true;
+        sqr_3.disabled = true;
+        sqr_4.disabled = true;
+        sqr_5.disabled = true;
+        sqr_6.disabled = true;
+        sqr_7.disabled = true;
+        sqr_8.disabled = true;
+      }else if(move[0] == 1 && move[1] == 1 && move[2] == 1 ||
+               move[3] == 1 && move[4] == 1 && move[5] == 1 ||
+               move[6] == 1 && move[7] == 1 && move[8] == 1 ||
+               move[0] == 1 && move[3] == 1 && move[6] == 1 ||
+               move[1] == 1 && move[4] == 1 && move[7] == 1 ||
+               move[2] == 1 && move[5] == 1 && move[8] == 1 ||
+               move[0] == 1 && move[4] == 1 && move[8] == 1 ||
+               move[2] == 1 && move[4] == 1 && move[6] == 1) {
+        console.log(`${playerTwo.name} WINS!!!`);
+        sqr_0.disabled = true;
+        sqr_1.disabled = true;
+        sqr_2.disabled = true;
+        sqr_3.disabled = true;
+        sqr_4.disabled = true;
+        sqr_5.disabled = true;
+        sqr_6.disabled = true;
+        sqr_7.disabled = true;
+        sqr_8.disabled = true;
+      }else if(moveCounter == 9){
+        console.log('IT\'S A DRAW!!');
+      }
+    }
   });
+
   //return 0;
 
 };
