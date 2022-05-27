@@ -34,9 +34,15 @@ header {
 }
 #game-table {
   background-color: #fafafa;
+  display: grid;
+  grid-template: 1fr 1fr 1fr/ 1fr 1fr 1fr;
   height: 20rem;
   width: 20rem;
   align-self: center;
+}
+
+.game-btn {
+  background-color: #cbd5e1;
 }
 
 #game-options {
