@@ -13,7 +13,10 @@ const playGame = (playerOne, playerTwo) => {
 
   const gameInfo = document.getElementById('game-info');
   gameInfo.textContent = `Player 1: ${playerOne.name}\n
-                          Player 2: ${playerTwo.name}`
+                          Player 2: ${playerTwo.name}`;
+
+  const content = document.querySelector('#content');
+  const selectGameMode = document.getElementById('select-game-mode');
 
   // Board buttons
   const sqr_0 = document.getElementById('sqr_0');
@@ -25,6 +28,9 @@ const playGame = (playerOne, playerTwo) => {
   const sqr_6 = document.getElementById('sqr_6');
   const sqr_7 = document.getElementById('sqr_7');
   const sqr_8 = document.getElementById('sqr_8');
+
+  const new_game_btn = document.getElementById('new-game-btn');
+  const re_match_btn = document.getElementById('re-match-btn')
 
   // Button events
   sqr_0.addEventListener('click', function() {
@@ -521,6 +527,15 @@ const playGame = (playerOne, playerTwo) => {
         console.log('IT\'S A DRAW!!');
       }
     }
+  });
+
+  new_game_btn.addEventListener('click', function() {
+      
+  });
+
+  re_match_btn.addEventListener('click', function() {
+    content.style.display = 'flex';
+
   });
 
   //return 0;
